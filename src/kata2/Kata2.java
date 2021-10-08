@@ -12,7 +12,7 @@ public class Kata2 {
       
       HashMap<Integer, Integer> hashMap = new HashMap <Integer, Integer>();
         
-      
+      /*
         for (int i = 0; i < data.length; i++) {
             
             
@@ -23,7 +23,12 @@ public class Kata2 {
                 
             }   
         }
-        
+        */
+        for (int key : data) {
+            hashMap.put(key, hashMap.containsKey(key) ? hashMap.get(key)+1 : 1);
+        }
+      
+      
         for (Integer key : hashMap.keySet()) {
             
             Integer value = hashMap.get(key);
