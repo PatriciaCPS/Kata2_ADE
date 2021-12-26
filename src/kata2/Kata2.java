@@ -1,7 +1,7 @@
 
 package kata2;
 
-import java.util.HashMap;
+
 import java.util.Map;
 
 
